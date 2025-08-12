@@ -1,0 +1,3 @@
+Trace,Cache Size,KIOPS,BW(MiB/s),Timestamp,SPDK Branch,DAS Version,Hit Ratio(%),Clean Ratio(%),Cache Read(GiB),Cache Write(GiB),Core Read(GiB),Latency(us)
+ali-dev-3.txt,10.7,210
+mds_1.txt,3.35,210
