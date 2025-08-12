@@ -19,12 +19,14 @@ import select
 
 import os
 
+HOME_PATH = "/home/hb"
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-SPDK_PATH = os.getenv("SPDK_PATH", "/home/lzq/spdk")
-LOG_PATH = os.getenv("LOG_PATH", os.path.join(SPDK_PATH, "log"))
+SPDK_PATH = os.getenv("SPDK_PATH", "/home/hb/spdk")
+LOG_PATH = os.getenv("LOG_PATH", os.path.join(SPDK_PATH, "log")) # /home/hb/spdk/log
+RESULT_BASE = os.getenv("RESULT_BASE", os.path.join(HOME_PATH, "AICache-tools")) # /home/hb/AICache-tools
 
 rpc_path = os.path.join(SPDK_PATH, "scripts/rpc.py")
-default_log_file = os.path.join(LOG_PATH, "/log/ocf_stats.log")
+default_log_file = os.path.join(RESULT_BASE, "ocf_stats/ocf_stats.log") # /home/hb/AICache-tools/ocf_stats/ocf_stats.log
 
 # 添加颜色输出类
 class ColorOutput:
